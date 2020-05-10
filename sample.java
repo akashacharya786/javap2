@@ -1,16 +1,15 @@
-package sample22;
-
 import java.applet.*;
 
 import java.awt.event.*;
 
 import java.awt.*;
 
-public class Sample222 extends
-Applet implements ActionListener{
+/*<Applet code=Sample222 width=500 height=500> </Applet> */
+
+public class Sample222 extends Applet implements ActionListener
+{
 	
 	
-/*<applet code="GcdLcm" width=500 height=500> </applet> */
 	
 	  
 Label l1,l2;
@@ -31,8 +30,8 @@ l2=new Label("Result");
 	      
 l2.setBounds(10,130,100,20);
 
-	     
- t1=new TextField(10);
+	      
+t1=new TextField(10);
 	      
 t1.setBounds(10,100,100,20);
 	      
@@ -41,7 +40,7 @@ t2=new TextField(20);
 	      
 b1=new Button("Check leap year");
 	     
-	     
+	      
 add(l1);
 	      
 add(t1);
@@ -77,6 +76,7 @@ if (year % 4 == 0)
 				
 if (year % 100 == 0) 
 {
+					
 if (year % 400 == 0)
 						
 leap = true;
@@ -85,8 +85,8 @@ else
 						
 leap = false;
 				
-} 
-else
+}
+ else
 					
 leap = true;
 			
@@ -109,5 +109,4 @@ t2.setText(String.valueOf(year)  +   "is not a leap year");
 	
 }
 	
-
 }
